@@ -18,11 +18,7 @@ body { margin: 0; }
 }
 
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  margin-bottom: 64px;
+  margin-bottom: 36px;
 }
 
 .profile {
@@ -34,11 +30,8 @@ header {
   object-fit: cover;
 }
 
-nav { display: flex; gap: 24px; }
-
 a {
   color: inherit;
-  font-size: 14px;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
 }
@@ -50,27 +43,22 @@ a:focus-visible {
   outline-offset: 5px;
 }
 
-section { scroll-margin-top: 32px; }
-
-#about { min-height: 128px; }
-
-h1, h2 {
-  margin: 0 0 20px;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.4;
-  letter-spacing: -0.02em;
+p, ul {
+  font-size: 15px;
+  line-height: 1.7;
 }
 
 p {
-  font-size: 15px;
-  line-height: 1.7;
   margin: 0;
 }
 
-.empty { color: #777; }
+ul {
+  margin: 28px 0 0;
+  padding-left: 20px;
+}
+
+li + li { margin-top: 8px; }
 
 @media (max-width: 480px) {
   .page { margin: 48px auto; }
-  header { margin-bottom: 48px; }
 }
